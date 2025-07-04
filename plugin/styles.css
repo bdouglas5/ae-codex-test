@@ -23,6 +23,10 @@ body {
     margin-bottom: 1rem;
 }
 
+.session-config {
+    margin-bottom: 1rem;
+}
+
 .icon-btn {
     background: none;
     border: none;
