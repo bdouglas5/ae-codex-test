@@ -1,26 +1,20 @@
 {
-  "manifestVersion": 4,
-  "id": "com.example.timetracker",
-  "name": "Time Tracker",
+  "manifestVersion": 5,
+  "id": "com.brandon.timetracker",
+  "name": "Brandon Timer",
   "version": "1.0.0",
   "main": "index.html",
-  "host": [
+  "host": {
+    "app": "PPRO",
+    "minVersion": "24.0.0"
+  },
+  "entrypoints": [
     {
-      "app": "AEFT",
-      "minVersion": "22.0"
-    },
-    {
-      "app": "PPRO",
-      "minVersion": "24.0"
+      "type": "panel",
+      "id": "brandon-timer",
+      "label": "Brandon Timer",
+      "icon": "icon.png",
+      "menuItems": []
     }
-  ],
-  "ui": {
-    "type": "panel",
-    "menu": [
-      {
-        "label": "Time Tracker",
-        "command": "open"
-      }
-    ]
-  }
+  ]
 }
