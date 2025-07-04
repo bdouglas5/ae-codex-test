@@ -18,9 +18,16 @@
     {
       "type": "panel",
       "id": "brandon-timer",
-      "label": "Brandon Timer",
+      "label": { "default": "Brandon Timer" },
+      "minimumSize": { "width": 300, "height": 200 },
       "icon": "icon.png",
       "menuItems": []
     }
   ]
+,
+  "requiredPermissions": {
+    "network": { "domains": "all" },
+    "clipboard": "readAndWrite",
+    "launchProcess": { "schemes": ["https"] }
+  }
 }
