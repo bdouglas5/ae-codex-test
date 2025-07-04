@@ -26,11 +26,16 @@ function parseTime(str) {
 
 function getProjectName() {
     try {
-        if (app.project && app.project.file) {
-            return app.project.file.name;
+        if (app.project) {
+            if (app.project.file && app.project.file.name) {
+                return app.project.file.name;
+            }
+            if (app.project.name) {
+                return app.project.name;
+            }
         }
     } catch (e) {
-        // not running in AE or project unsaved
+        // not running in host app or project unsaved
     }
     return 'Untitled';
 }
