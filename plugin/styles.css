@@ -1,11 +1,56 @@
 body {
     font-family: sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
 }
+
 .container {
     text-align: center;
+}
+
+.project-select {
+    margin-bottom: 1rem;
+}
+
+.project-select select {
+    padding: 0.25rem;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.controls {
+    margin: 1rem 0;
+}
+
+#timer {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.icon-grid .icon-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
 }
