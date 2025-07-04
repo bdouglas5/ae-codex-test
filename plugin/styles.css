@@ -13,15 +13,14 @@ body {
     text-align: center;
 }
 
-.project-select {
-    margin-bottom: 1rem;
+
+.project-name {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
-.project-select select {
-    padding: 0.25rem;
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #555;
+.idle-config {
+    margin-bottom: 1rem;
 }
 
 .icon-btn {
@@ -41,16 +40,3 @@ body {
     margin-top: 0.5rem;
 }
 
-.icon-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 40px);
-    grid-gap: 0.5rem;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.icon-grid .icon-btn {
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-}
