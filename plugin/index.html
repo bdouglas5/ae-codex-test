@@ -8,16 +8,11 @@
 <body>
     <div class="container">
         <h1>Time Tracker</h1>
-        <div class="project-select">
-            <select id="projectSelect">
-                <option>Project A</option>
-            </select>
-            <button id="projectPlayBtn" class="icon-btn" aria-label="Play Project">
-                <!-- Play Icon -->
-                <svg viewBox="0 0 16 16" width="16" height="16">
-                    <polygon points="0,0 16,8 0,16" fill="currentColor" />
-                </svg>
-            </button>
+        <div id="projectName" class="project-name">Project</div>
+
+        <div class="idle-config">
+            <label for="idleInput">Idle timeout (min):</label>
+            <input id="idleInput" type="number" min="1" value="2" />
         </div>
 
         <div id="timer">00:00:00</div>
@@ -41,17 +36,9 @@
                 </svg>
             </button>
         </div>
-
-        <div class="icon-grid">
-            <button class="icon-btn" aria-label="Icon 1"></button>
-            <button class="icon-btn" aria-label="Icon 2"></button>
-            <button class="icon-btn" aria-label="Icon 3"></button>
-            <button class="icon-btn" aria-label="Icon 4"></button>
-            <button class="icon-btn" aria-label="Icon 5"></button>
-            <button class="icon-btn" aria-label="Icon 6"></button>
-        </div>
     </div>
 
+    <script src="storage.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
