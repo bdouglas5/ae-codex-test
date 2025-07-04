@@ -4,10 +4,16 @@
   "name": "Brandon Timer",
   "version": "1.0.0",
   "main": "index.html",
-  "host": {
-    "app": "PPRO",
-    "minVersion": "24.0.0"
-  },
+  "host": [
+    {
+      "app": "PPRO",
+      "minVersion": "24.0.0"
+    },
+    {
+      "app": "AEFT",
+      "minVersion": "24.0.0"
+    }
+  ],
   "entrypoints": [
     {
       "type": "panel",

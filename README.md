@@ -5,7 +5,7 @@ tracks how long you spend on the current project and can export a CSV summary.
 
 ## Compatibility
 
-The extension works in Premiere Pro only (version 24.0.0 or later).
+The extension works in Premiere Pro and After Effects (version 24.0.0 or later).
 
 ## Installation
 
