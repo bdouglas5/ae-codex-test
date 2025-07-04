@@ -8,8 +8,50 @@
 <body>
     <div class="container">
         <h1>Time Tracker</h1>
-        <button id="startBtn">Start Tracking</button>
+        <div class="project-select">
+            <select id="projectSelect">
+                <option>Project A</option>
+            </select>
+            <button id="projectPlayBtn" class="icon-btn" aria-label="Play Project">
+                <!-- Play Icon -->
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <polygon points="0,0 16,8 0,16" fill="currentColor" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="timer">00:00:00</div>
+
+        <div class="controls">
+            <button id="playBtn" class="icon-btn" aria-label="Play">
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <polygon points="0,0 16,8 0,16" fill="currentColor" />
+                </svg>
+            </button>
+            <button id="pauseBtn" class="icon-btn" aria-label="Pause">
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <rect x="1" y="0" width="5" height="16" fill="currentColor" />
+                    <rect x="10" y="0" width="5" height="16" fill="currentColor" />
+                </svg>
+            </button>
+            <button id="refreshBtn" class="icon-btn" aria-label="Reset">
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <path d="M8 1v2.5A4.5 4.5 0 1 1 3.5 8" stroke="currentColor" fill="none" />
+                    <polygon points="8,0 12,2 8,4" fill="currentColor" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="icon-grid">
+            <button class="icon-btn" aria-label="Icon 1"></button>
+            <button class="icon-btn" aria-label="Icon 2"></button>
+            <button class="icon-btn" aria-label="Icon 3"></button>
+            <button class="icon-btn" aria-label="Icon 4"></button>
+            <button class="icon-btn" aria-label="Icon 5"></button>
+            <button class="icon-btn" aria-label="Icon 6"></button>
+        </div>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>
