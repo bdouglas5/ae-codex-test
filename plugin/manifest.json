@@ -4,10 +4,16 @@
   "name": "Time Tracker",
   "version": "1.0.0",
   "main": "index.html",
-  "host": {
-    "app": "AEFT",
-    "minVersion": "22.0"
-  },
+  "host": [
+    {
+      "app": "AEFT",
+      "minVersion": "22.0"
+    },
+    {
+      "app": "PPRO",
+      "minVersion": "24.0"
+    }
+  ],
   "ui": {
     "type": "panel",
     "menu": [
